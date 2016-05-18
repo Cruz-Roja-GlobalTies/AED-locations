@@ -1,7 +1,7 @@
 <html class="no-js" ng-app="meanMapApp">
 <head>
 <meta charset="utf-8">
-<title>Scotch MEAN Map</title>
+<title>Cruz Roja AEDs</title>
 <meta name="description" content="An example demonstrating Google
 Map integration with MEAN Apps">
 <meta name="viewport" content="width=device-width,
@@ -14,8 +14,8 @@ href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
 <script
 src="../bower_components/holderjs/holder.js"></script>
 <!-- Google Maps API -->
-<script
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE"></script>
+<!--<script
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE"></script> -->
 <!-- Modernizr -->
 <script
 src="../bower_components/modernizr/bin/modernizr"></script>
@@ -103,80 +103,9 @@ control)
                                                 <input
                                                 type="text"
                                                 class="form-control"
-                                                id="username"
-                                                placeholder="OldandGold"
+                                                id="Name"
+                                                placeholder="Firstname Lastname"
                                                 ng-model="formData.username"
-                                                required>
-                                        </div>
-                                        <label
-                                                class="radio
-                                                control-label">Gender</label>
-                                        <div
-                                                class="radio">
-                                                <label>
-                                                        <input
-                                                        type="radio"
-                                                        name="optionsRadios"
-                                                        id="radiomale"
-                                                        value="Male"
-                                                        ng-model="formData.gender">
-                                                        Male
-                                                </label>
-                                        </div>
-                                        <div
-                                                class="radio"
-                                                required>
-                                                <label>
-                                                        <input
-                                                        type="radio"
-                                                        name="optionsRadios"
-                                                        id="radiofemale"
-                                                        value="Female"
-                                                        ng-model="formData.gender">
-                                                        Female
-                                                </label>
-                                        </div>
-                                        <div
-                                                class="radio">
-                                                <label>
-                                                        <input
-                                                        type="radio"
-                                                        name="optionsRadios"
-                                                        id="radioother"
-                                                        value="What's
-                                                        it
-                                                        to
-                                                        ya?"
-                                                        ng-model="formData.gender">
-                                                        What's
-                                                        it
-                                                        to
-                                                        ya?
-                                                </label>
-                                        </div>
-                                        <div
-                                                class="form-group">
-                                                <label
-                                                        for="age">Age</label>
-                                                <input
-                                                type="number"
-                                                class="form-control"
-                                                id="age"
-                                                placeholder="72"
-                                                ng-model="formData.age"
-                                                required>
-                                        </div>
-                                        <div
-                                                class="form-group">
-                                                <label
-                                                        for="language">Favorite
-                                                        Language</label>
-                                                <input
-                                                type="text"
-                                                class="form-control"
-                                                id="language"
-                                                placeholder="Fortran"
-                                                ng-model="formData.favlang"
                                                 required>
                                         </div>
                                         <div
@@ -261,30 +190,6 @@ control)
         </div>
 </div>
 <hr/>
-<!-- Footer
-    -->
-<div
-        class="footer">
-        <p
-        class="text-center"><span
-                class="glyphicon
-                glyphicon-check"></span>
-        Created
-        by
-        Ahmed
-        Haque
-        for
-        Scotch
-        IO
-        -
-        <a
-                href="https://scotch.io/">App
-                Tutorial</a>
-        |
-        <a
-                href="https://github.com/afhaque/MeanMapAppV2.0">Github
-                Repo</a></p>
-</div>
 </div>
 </body>
 </html>
