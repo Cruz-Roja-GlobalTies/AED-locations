@@ -1,4 +1,4 @@
-var mongoose        = require('mongoose');
+var mongoose        = require('mysql');
 var User            = require('./model.js');
 
 //Opens App Routes
