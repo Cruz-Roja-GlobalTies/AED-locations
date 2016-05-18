@@ -14,8 +14,7 @@ href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
 <script
 src="../bower_components/holderjs/holder.js"></script>
 <!-- Google Maps API -->
-<!--<script
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE"></script> -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <!-- Modernizr -->
 <script
 src="../bower_components/modernizr/bin/modernizr"></script>
@@ -28,6 +27,28 @@ src="../bower_components/angular/angular.js"></script>
 src="../bower_components/angular-route/angular-route.js"></script>
 <script
 src="../bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+
+<script>
+var myCenter=new google.maps.LatLng(32.5110437,-117.0150157);
+
+function initialize() {
+    var mapProp = {
+center:new google.maps.LatLng(32.5110437,-117.0150157),
+       zoom:5,
+       mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    var marker=new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
 </head>
 <body>
 <div
@@ -46,9 +67,10 @@ Panel
     -->
         <div
                 class="col-md-7">
-                <div
+                <!--<div
                         id="map"><img
-                        src="holder.js/645x645"></div>
+                        src="holder.js/645x645"></div>-->
+                <div id="googleMap" style="width:600px;height:480px;"></div>
         </div>
         <!-- Side
 Panel
@@ -184,11 +206,14 @@ control)
                                                 btn-danger
                                                 btn-block"
                                                 ng-disabled="addForm.$invalid">Submit</button>
+
                                 </form>
                         </div>
                 </div>
         </div>
 </div>
+<!--<div id="googleMap" style="width:500px;height:380px;"></div>-->
+
 <hr/>
 </div>
 </body>
