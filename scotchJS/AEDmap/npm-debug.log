@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'mongodb-server' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json cruz_roja_AED@0.0.0 No repository field.
+5 warn package.json cruz_roja_AED@0.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'mongodb-server', null ]
+8 verbose cache add name=undefined spec="mongodb-server" args=["mongodb-server",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'mongodb-server',
+9 verbose parsed url   path: 'mongodb-server',
+9 verbose parsed url   href: 'mongodb-server' }
+10 silly lockFile a84e1157-mongodb-server mongodb-server
+11 verbose lock mongodb-server /home/jhartzler/.npm/a84e1157-mongodb-server.lock
+12 silly lockFile a84e1157-mongodb-server mongodb-server
+13 silly lockFile a84e1157-mongodb-server mongodb-server
+14 verbose addNamed [ 'mongodb-server', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile f9a38038-mongodb-server mongodb-server@
+17 verbose lock mongodb-server@ /home/jhartzler/.npm/f9a38038-mongodb-server.lock
+18 silly addNameRange { name: 'mongodb-server', range: '*', hasData: false }
+19 verbose url raw mongodb-server
+20 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-server' ]
+21 verbose url resolved https://registry.npmjs.org/mongodb-server
+22 info trying registry request attempt 1 at 15:25:03
+23 http GET https://registry.npmjs.org/mongodb-server
+24 http 404 https://registry.npmjs.org/mongodb-server
+25 silly registry.get cb [ 404,
+25 silly registry.get   { 'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=0',
+25 silly registry.get     'content-length': '2',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     date: 'Wed, 22 Jun 2016 22:25:42 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'keep-alive',
+25 silly registry.get     'x-served-by': 'cache-lax1433-LAX',
+25 silly registry.get     'x-cache': 'MISS',
+25 silly registry.get     'x-cache-hits': '0',
+25 silly registry.get     'x-timer': 'S1466634342.892132,VS0,VE46',
+25 silly registry.get     vary: 'Accept-Encoding' } ]
+26 silly addNameRange number 2 { name: 'mongodb-server', range: '*', hasData: true }
+27 silly addNameRange versions [ undefined, [] ]
+28 error TypeError: Cannot read property 'latest' of undefined
+28 error     at next (/usr/share/npm/lib/cache.js:687:35)
+28 error     at /usr/share/npm/lib/cache.js:675:5
+28 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+28 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+28 error     at Object.oncomplete (fs.js:107:15)
+29 error If you need help, you may report this log at:
+29 error     <http://github.com/isaacs/npm/issues>
+29 error or email it to:
+29 error     <npm-@googlegroups.com>
+30 error System Linux 3.13.0-86-generic
+31 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "mongodb-server"
+32 error cwd /home/jhartzler/AEDmap
+33 error node -v v0.10.25
+34 error npm -v 1.3.10
+35 error type non_object_property_load
+36 verbose exit [ 1, true ]
