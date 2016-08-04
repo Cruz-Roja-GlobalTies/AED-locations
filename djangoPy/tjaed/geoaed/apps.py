@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class AedtjConfig(AppConfig):
+class GeoAEDConfig(AppConfig):
     name = 'geoaed'
